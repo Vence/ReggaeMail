@@ -20,7 +20,7 @@ public class SenderTest {
 
 	@Before
 	public void setUp() throws Exception {
-		u = new User("cr4shxxl@gmail.com", new GmailMailAccount("pablo.arrighi.reggaemail@gmail.com", "m1diiunivamu"));
+		u = new User ("nabil.adrar@gmail.com", "malek.karki.reggae@gmail.com", ",;:!,;:");
 	}
 
 	@After

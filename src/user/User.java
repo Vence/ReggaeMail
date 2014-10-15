@@ -12,14 +12,23 @@ import mailer.RegAuthenticator;
 
 public class User {
 	
-	public String primaryemail="cr4shxxl@gmail.com";
+	public String primaryemail="nabil.adrar@gmail.com";
+	public String secondaryemail="malek.karki.reggae@gmail.com";
+	public String secondarypassword=",;:!,;:!";
+	public String smtp_auth="true";
+	public String smtp_host="smtp.gmail.com";
+	public String smtp_port="587";
+	public String smtp_starttls="true";
+	public String store_protocol="imaps";
+	public String imap_host="imap.googlemail.com";
 	private MailAccount account;
 	
-	public User(String primaryEmail, MailAccount mailAccount) {
-		this.primaryemail = primaryEmail;
-		this.account = mailAccount;
+	public User (String primaryemail, String secondaryemail, String secondarypassword) {
+		this.primaryemail      = primaryemail;
+		this.secondaryemail    = secondaryemail;
+		this.secondarypassword = secondarypassword;
 	}
-	
+
 	public Properties getProperties() {
 		return account.getProperties();
 	}
