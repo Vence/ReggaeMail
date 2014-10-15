@@ -12,7 +12,7 @@ public class RegAuthenticator extends Authenticator {
 	public RegAuthenticator(User u) {this.u=u;}
 	
 	protected PasswordAuthentication getPasswordAuthentication() {
-        return new PasswordAuthentication(u.secondaryemail, u.secondarypassword);
+        return new PasswordAuthentication(u.getMailAccount().getMail(), u.getMailAccount().getPassword());
     }
 
 }

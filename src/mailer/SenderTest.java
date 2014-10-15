@@ -1,7 +1,6 @@
 package mailer;
 
 import user.*;
-
 import static org.junit.Assert.*;
 
 import javax.mail.Message;
@@ -21,7 +20,7 @@ public class SenderTest {
 
 	@Before
 	public void setUp() throws Exception {
-		u = new User();
+		u = new User("cr4shxxl@gmail.com", new GmailMailAccount("pablo.arrighi.reggaemail@gmail.com", "m1diiunivamu"));
 	}
 
 	@After
@@ -34,7 +33,7 @@ public class SenderTest {
 		String textBody = "This is a new Text Message.";
 		try {      		
 		Message message = new MimeMessage(u.getSession());
-		message.setFrom(new InternetAddress(u.secondaryemail));
+		message.setFrom(new InternetAddress(u.getMailAccount().getMail()));
 		message.setRecipients(Message.RecipientType.TO,InternetAddress.parse("pablo.arrighi@gmail.com"));
 		message.setSubject("New Testing Subject");
 		//MailcapCommandMap mc = (MailcapCommandMap) CommandMap.getDefaultCommandMap();

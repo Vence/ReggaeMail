@@ -17,7 +17,7 @@ public class Controller {
 		System.out.println("Welcome to the ReggaeMail experience.\n");
 		
 		System.out.println("Setting up the default user... ");
-		u= new User();
+		u = new User("cr4shxxl@gmail.com", new GmailMailAccount("pablo.arrighi.reggaemail@gmail.com", "m1diiunivamu"));
 		System.out.println("Done.\n");
 		
 		System.out.println("Checking out his secondary mailbox...");
