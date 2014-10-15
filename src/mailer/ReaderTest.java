@@ -15,7 +15,7 @@ public class ReaderTest {
 
 	@Before
 	public void setUp()  {
-		u = new User();
+		u = new User ("nabil.adrar@gmail.com", "malek.karki.reggae@gmail.com", ",;:!,;:");
 	}
 
 	@After

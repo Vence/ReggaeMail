@@ -21,7 +21,7 @@ public class SenderTest {
 
 	@Before
 	public void setUp() throws Exception {
-		u = new User();
+		u = new User ("nabil.adrar@gmail.com", "malek.karki.reggae@gmail.com", ",;:!,;:");
 	}
 
 	@After

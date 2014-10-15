@@ -12,9 +12,9 @@ import mailer.RegAuthenticator;
 
 public class User {
 	
-	public String primaryemail="pablo.arrighi@gmail.com";
-	public String secondaryemail="pablo.arrighi.reggaemail@gmail.com";
-	public String secondarypassword="m1diiunivamu";
+	public String primaryemail="nabil.adrar@gmail.com";
+	public String secondaryemail="malek.karki.reggae@gmail.com";
+	public String secondarypassword=",;:!,;:!";
 	public String smtp_auth="true";
 	public String smtp_host="smtp.gmail.com";
 	public String smtp_port="587";
@@ -22,6 +22,12 @@ public class User {
 	public String store_protocol="imaps";
 	public String imap_host="imap.googlemail.com";
 	
+	public User (String primaryemail, String secondaryemail, String secondarypassword) {
+		this.primaryemail      = primaryemail;
+		this.secondaryemail    = secondaryemail;
+		this.secondarypassword = secondarypassword;
+	}
+
 	public Properties getProperties() {
 		Properties props=System.getProperties();
         props.setProperty("mail.smtp.auth", smtp_auth);
