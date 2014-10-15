@@ -6,7 +6,6 @@ import javax.mail.Message;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
-
 import static org.junit.Assert.*;
 
 import org.junit.After;
@@ -19,7 +18,11 @@ public class RegMsgTest {
 
 	@Before
 	public void setUp() {
+<<<<<<< HEAD
 		u= new User ("nabil.adrar@gmail.com", "malek.karki.reggae@gmail.com", ",;:!,;:");
+=======
+		u = new User("cr4shxxl@gmail.com", new GmailMailAccount("pablo.arrighi.reggaemail@gmail.com", "m1diiunivamu"));
+>>>>>>> upstream/master
 	}
 
 	@After

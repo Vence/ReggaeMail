@@ -21,6 +21,7 @@ public class User {
 	public String smtp_starttls="true";
 	public String store_protocol="imaps";
 	public String imap_host="imap.googlemail.com";
+	private MailAccount account;
 	
 	public User (String primaryemail, String secondaryemail, String secondarypassword) {
 		this.primaryemail      = primaryemail;
@@ -29,13 +30,11 @@ public class User {
 	}
 
 	public Properties getProperties() {
-		Properties props=System.getProperties();
-        props.setProperty("mail.smtp.auth", smtp_auth);
-        props.setProperty("mail.smtp.host", smtp_host);
-        props.setProperty("mail.smtp.port", smtp_port);
-        props.setProperty("mail.smtp.starttls.enable", smtp_starttls);
-        props.setProperty("mail.store.protocol", store_protocol);
-		return props;
+		return account.getProperties();
+	}
+	
+	public MailAccount getMailAccount() {
+		return this.account;
 	}
 	
 	public Session getSession() {

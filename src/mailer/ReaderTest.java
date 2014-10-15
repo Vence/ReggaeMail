@@ -15,7 +15,11 @@ public class ReaderTest {
 
 	@Before
 	public void setUp()  {
+<<<<<<< HEAD
 		u = new User ("nabil.adrar@gmail.com", "malek.karki.reggae@gmail.com", ",;:!,;:");
+=======
+		u = new User("cr4shxxl@gmail.com", new GmailMailAccount("pablo.arrighi.reggaemail@gmail.com", "m1diiunivamu"));
+>>>>>>> upstream/master
 	}
 
 	@After

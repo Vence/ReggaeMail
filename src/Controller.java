@@ -14,6 +14,25 @@ public class Controller {
 
 	public static void main(String[] args) throws MessagingException, IOException, ParseException {
 		System.out.println("Welcome to the ReggaeMail experience.\n");
+<<<<<<< HEAD
+=======
+		
+		System.out.println("Setting up the default user... ");
+		u = new User("cr4shxxl@gmail.com", new GmailMailAccount("pablo.arrighi.reggaemail@gmail.com", "m1diiunivamu"));
+		System.out.println("Done.\n");
+		
+		System.out.println("Checking out his secondary mailbox...");
+		Reader.readFolder(u);
+        System.out.println("  No of Messages : " + Reader.folder.getMessageCount());
+        System.out.println("  Retrieved : " + Reader.messages.length);
+        System.out.println("  No of Unread Messages : " + Reader.folder.getUnreadMessageCount());
+		System.out.println("Done.\n");
+		
+		System.out.println("Going through each mail... ");
+		
+        for (Message msg : Reader.messages) 
+        {
+>>>>>>> upstream/master
 
 		BufferedReader br = null;
 		
